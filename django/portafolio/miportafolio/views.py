@@ -3,7 +3,7 @@ from miportafolio.models import proyecto
 # Create your views here.
 
 
-def home(resquest):
+def home(request):
     projects=proyecto.objects.all()
     
-    return render(resquest ,"index.html", {"projects":projects} )
+    return render(request ,"index.html", {"projects":projects} )

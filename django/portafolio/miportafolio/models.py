@@ -11,7 +11,7 @@ class proyecto(models.Model):
     web=models.BooleanField(None)
     ciencia_de_datos=models.BooleanField(None)
     analisis_de_datos=models.BooleanField(None)
-    tranding=models.BooleanField(None)
+    trading=models.BooleanField(None)
     
     def __str__(self):
         

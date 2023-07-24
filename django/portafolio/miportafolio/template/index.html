@@ -1,9 +1,19 @@
-{% include 'template.html' %}
+{% extends "template.html" %}
+{% block title %}
+    {% for project in projects %}
+  
+    	{{ project.nombre }}
+    
+    {% endfor %}
+{% endblock %}
 
-{% block content%}
-
-    {% for proyecto in projects %}
-        <h2>{{projects.nombre}}</h2>   
-
+{% block content %}
+    {% for project in projects %}
+        <div>
+            <h3>{{ project.nombre }}</h3>
+            <p>{{ project.descripcion }}</p>
+          <img src="{{ project.imagen.url }}" alt="{{ project.nombre }}">
+           
+        </div>
     {% endfor %}
 {% endblock %}
