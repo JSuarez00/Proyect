@@ -1,5 +1,5 @@
 """
-URL configuration for practica project.
+URL configuration for tiendapratica project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,13 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from practica.views import hola, despedida, calcula_edad, fecha
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hola/', hola),
-    path('despedida/', despedida),
-    path('edad/<int:year>', calcula_edad),
-    path('fecha/', fecha),
-    
 ]
