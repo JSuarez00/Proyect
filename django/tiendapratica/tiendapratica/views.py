@@ -5,6 +5,8 @@ from gestionpedidos.models import proyecto
 
 # Create your views here.
 
-def proyecto(resquest):
-    Titulo=
+def proyecto1(resquest):
+    Titulo=proyecto.nombre
+    
+    
     return render(resquest,"template.html")
