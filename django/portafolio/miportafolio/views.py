@@ -4,6 +4,6 @@ from miportafolio.models import proyecto
 
 
 def home(resquest):
-    project=proyecto.objects(all)
+    projects=proyecto.objects.all()
     
-    return render(resquest ,"template.html" ,{proyecto:project})
+    return render(resquest ,"index.html", {"projects":projects} )
