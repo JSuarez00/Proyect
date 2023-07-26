@@ -1,9 +1,8 @@
 {% include "template.html" %}
-        <td><img src="{{posts.imagen.url}}" alt="{{posts.nombre}}"></td>
+        <div><img src="{{posts.imagen.url}}" alt="{{posts.nombre}}"></div>
         <h1><td>{{posts.nombre}}</td></h1>
         <td></td>
         <td></td>
         <p><td>{{posts.descripcion}}</td></p> 
-        <td></td>
-        <a href="{{posts.link}}">adjuntos</a>
-         {{posts}}
+        <td><a href="{{posts.link}}">adjuntos</a></td>
+       
