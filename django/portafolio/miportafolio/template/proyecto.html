@@ -1,9 +1,15 @@
+{% block tilte %}
 
-           
-<h1>trabajando en proyectos</h1>
+{% endblock %}           
+
+{% block content %}
 <div>
     <div><img src="{{proyecto.imagen.url}}" alt="{{posts.nombre}}"></div>
 </div>
 
-<h1>{{proyecto.nombre}}</h1>
-<p>{{proyecto.descripcion}}</p>
+<div><h1>{{proyecto.nombre}}</h1>
+    <p>{{proyecto.descripcion}}</p>
+    <a href="{{proyecto.link}}" >link</a>
+</div>
+
+{% endblock %}
