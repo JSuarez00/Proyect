@@ -6,10 +6,13 @@
 {% block content %}
     {% for project in projects %}
         <div>
-            <h3>{{ project.nombre }}</h3>
-            <p>{{ project.descripcion }}</p>
-          <img src="{{ project.imagen.url }}" alt="{{ project.nombre }}">
+            <div><img src="{{ project.imagen.url }}" alt="{{ project.nombre }}"></div>
+            <h1>{{ project.nombre }}</h1>
+            <p>{{ project.descripcion|truncatechars:100 }}</p>
+            <td>,<a href="{% url 'proyecto:porta' project.id %}">Ver mas</a></td>
+          
            
         </div>
     {% endfor %}
 {% endblock %}
+

@@ -9,16 +9,10 @@
     <p>Esta es la página principal de mi block web.</p>
     
       {% for post in post %}
-         {{post.nombre}}
-         {{post.descripcion}}
-         
-         {{post.url}}
-
-         {{post.trading}}
-            <img src="{{post.imagen.url}}" alt="{{post.nombre}}">
+        <div><img src="{{post.imagen.url}}" alt="{{post.nombre}}"></img></div>     
+         <h1>{{post.nombre}}</h1>
+         <p>{{post.descripcion|truncatechars:100 }}</p>
+         <td>,<a href="{% url 'blog:post_detail' post.id %}">Ver mas</a></td>
       {% endfor %}
-
-      {% if {{post.web}} = True: % }
-      "desarrollo web"
-  {% endif}
 {% endblock %}
+
