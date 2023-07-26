@@ -6,5 +6,5 @@ app_name="proyecto"
 
 urlpatterns = [
     path('', home, name= 'home'),
-   path('<int:proyecto_id>', porta , name="porta")
+   path('<int:proyecto_id>', porta , name="porta2")
 ] 

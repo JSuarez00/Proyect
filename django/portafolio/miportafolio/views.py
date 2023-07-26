@@ -10,5 +10,6 @@ def home(request):
 
 def porta(request, proyecto_id):
     portar=get_object_or_404(proyecto, pk=proyecto_id )
-    return render(request, 'proyecto.html', {"porta":porta})
+    
+    return render(request, 'proyecto.html', {"proyecto":portar})
 

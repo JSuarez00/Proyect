@@ -9,7 +9,7 @@
             <div><img src="{{ project.imagen.url }}" alt="{{ project.nombre }}"></div>
             <h1>{{ project.nombre }}</h1>
             <p>{{ project.descripcion|truncatechars:100 }}</p>
-            <td>,<a href="{% url 'proyecto:porta' project.id %}">Ver mas</a></td>
+            <td>,<a href="{% url 'proyecto:porta2' project.id %}">Ver mas</a></td>
           
            
         </div>
