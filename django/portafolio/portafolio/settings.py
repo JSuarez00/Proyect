@@ -57,7 +57,8 @@ ROOT_URLCONF = 'portafolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/jose/Desktop/VIDEO CURSOS 2/proyect de programacion/Proyect/django/portafolio/miportafolio/template'],
+        'DIRS': ['C:/Users/jose/Desktop/VIDEO CURSOS 2/proyect de programacion/Proyect/django/portafolio/miportafolio/template',
+                 'C:/Users/jose/Desktop/VIDEO CURSOS 2/proyect de programacion/Proyect/django/portafolio/block/template',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
