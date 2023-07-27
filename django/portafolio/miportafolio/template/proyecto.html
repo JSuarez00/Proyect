@@ -1,15 +1,18 @@
+{% extends "template.html" %}
 {% block tilte %}
 
 {% endblock %}           
 
 {% block content %}
-<div>
-    <div><img src="{{proyecto.imagen.url}}" alt="{{posts.nombre}}"></div>
-</div>
 
-<div><h1>{{proyecto.nombre}}</h1>
+    <div class="col-md-4">
+        <img src="{{proyecto.imagen.url}}" alt="{{posts.nombre}}">
+    </div>
+
+<div>
+    <h1>{{proyecto.nombre}}</h1>
     <p>{{proyecto.descripcion}}</p>
-    <a href="{{proyecto.link}}" >link</a>
+    <a href="{{proyecto.link}}" target="_blank" >link</a>
 </div>
 
 {% endblock %}
