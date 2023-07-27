@@ -9,10 +9,21 @@
     <p>Esta es la página principal de mi block web.</p>
     
       {% for post in post %}
-        <div><img src="{{post.imagen.url}}" alt="{{post.nombre}}"></img></div>     
-         <h1>{{post.nombre}}</h1>
-         <p>{{post.descripcion|truncatechars:100 }}</p>
-         <td>,<a href="{% url 'blog:post_detail' post.id %}">Ver mas</a></td>
+       <div class="p-3">
+        <div class="card card-body bg-black">
+          <div class="row">
+            <div class="col-3">
+              <div><img src="{{post.imagen.url}}" alt="{{post.nombre}}" class="img-fluid"></img></div> 
+            </div>
+            <div class="col-9">
+              <h1>{{post.nombre}}</h1>
+              <p>{{post.descripcion|truncatechars:100 }}</p>
+              <td><a href="{% url 'blog:post_detail' post.id %}" class="btn btn-light btn-sm">Ver mas</a></td></div>
+            </div>
+          </div>
+            
+       </div>
+     
       {% endfor %}
 {% endblock %}
 
