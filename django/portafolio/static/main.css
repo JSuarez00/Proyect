@@ -12,3 +12,8 @@ body{
     cursor: pointer;
 
 }
+.card-project-b:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+
+}
